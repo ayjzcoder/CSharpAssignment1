@@ -13,10 +13,10 @@ int num = random.Next(1,100);
         guess = Convert.ToInt32(Console.ReadLine());
 
         if (guess > num)
-            Console.WriteLine("Lower \n");
+            Console.WriteLine(guess + " is too high \n");
 
         if (guess < num)
-            Console.WriteLine("Higher \n");
+            Console.WriteLine(guess + " is too low \n");
         no_guess++;
         if (guess == num)
            Console.WriteLine("\nYou have guessed it correctly \nThe number is: " + num + "\nYou have guessed: " + no_guess + " times");
@@ -25,4 +25,5 @@ int num = random.Next(1,100);
     choice = Console.ReadLine().ToUpper();
    
 }
+    Console.WriteLine("\nThanks for playing have a nice day!!");
 
